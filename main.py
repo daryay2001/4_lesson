@@ -58,8 +58,8 @@
 # если юзер ввел 0 -> прекратить ввод чисел
 # в конце вывести среднее арифметическое числовой последовательности
 
-sum_num = 0
-count = 0
+# sum_num = 0
+# count = 0
 
 # v1
 # try:
@@ -138,7 +138,7 @@ count = 0
 
 
 # for i in range(1, 10, -1):
-#     print(i)
+#     print(i) # не сработает
 
 # for i in range(5):
 #     print(i, end=" ")
@@ -181,13 +181,13 @@ count = 0
 # # v2
 # path = "C:\\Users\\admin\\PycharmProjects\\FastAPI_materials"
 # print(path)
-#
+# лучше использовать метод 2, т.к. его удобнее использовать для передачи данных
 # #
 # print("hello, \"world\"\n\tfrom program")
 
 ########
 # dogs, cats = 12, 15
-# result = f"Dogs {dogs} and cats {cats}"
+# result = f"Dogs {dogs} and cats {cats}" # Так писать удобнее
 # print(result)
 #
 # result = "Dogs {} and cats {}".format(dogs, cats)
@@ -263,13 +263,13 @@ count = 0
 # else:
 #     print(a2)
 #
-# print(ord("A"))
-# print(chr(98))
+# print(ord("A")) # перевод буквы в цифру
+# print(chr(98)) # перевод цифры в букву
 
 ####
 # text = "helLo woRlD"
 #
-# # isalpha(): возвращает True, если строка состоит только из алфавитных символов
+# # isalpha(): возвращает True, если строка состоит только из алфавитных символов (пробел не алфавитный символ)
 #
 # print(text.isalpha())
 #
@@ -312,12 +312,12 @@ count = 0
 # # capitalize(): переводит в верхний регистр первую букву только самого первого слова строки
 #
 # print(text.capitalize())
-#
+
 # fio = input("Enter fio: ").title()
 # print(fio)
 
 #
-# # lstrip(): удаляет начальные пробелы из строки
+# lstrip(): удаляет начальные пробелы из строки
 # text = "  helLo woRlD  "
 # print(text)
 # print(text.lstrip())
@@ -363,10 +363,10 @@ count = 0
 # for i in range(len(text)):
 #     if text[i] == "l":
 #         print(i)
-#
-# # v2
+# #
+# # # v2
 # index = 0
-#
+# #
 # for letter in text:
 #     if letter == "l":
 #         print(index)
@@ -375,8 +375,8 @@ count = 0
 #
 #
 # # replace(old, new[, num]): заменяет в строке одну подстроку на другую
-# text = "hello world hello"
-# print(text)
-#
-# text = text.replace("hello", "goodbye", 1)
-# print(text)
+text = "hello world hello"
+print(text)
+
+text = text.replace("hello", "goodbye", 1)
+print(text)
